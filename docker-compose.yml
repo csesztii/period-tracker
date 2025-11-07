@@ -1,0 +1,22 @@
+services:
+  backend:
+    build: ./backend  # <-- Use the Dockerfile in ./backend
+    working_dir: /usr/src/app
+    volumes:
+      - ./backend:/usr/src/app
+      - /usr/src/app/node_modules # <-- Add this to protect node_modules
+    ports:
+      - "5000:5000"
+    # The 'command' is now in the Dockerfile (CMD)
+
+  frontend:
+    build: ./frontend # <-- Use the Dockerfile in ./frontend
+    working_dir: /usr/src/app
+    volumes:
+      - ./frontend:/usr/src/app
+      - /usr/src/app/node_modules # <-- This is the one, correct volumes block
+    ports:
+      - "3000:3000"
+    environment:
+      - WATCHPACK_POLLING=true
+    # The 'command' is now in the Dockerfile (CMD)

@@ -1,0 +1,100 @@
+# ===================================================================
+# Dependencies & Package Manager Caches
+# ===================================================================
+node_modules/
+jspm_packages/
+bower_components/
+
+# Yarn
+.yarn/
+.yarn-integrity
+.pnp.*
+
+# NPM
+.npm
+
+# pnpm
+.pnpm-debug.log*
+
+# ===================================================================
+# Build Outputs & Bundler Caches
+# ===================================================================
+# Generic/Create React App
+build/
+dist/
+
+# Frameworks
+.next/
+out/
+.nuxt/
+.svelte-kit/
+.vuepress/dist/
+.temp/
+.docusaurus/
+
+# Bundlers
+.cache/
+.parcel-cache/
+.webpack/
+.fusebox/
+
+# TypeScript
+*.tsbuildinfo
+
+# =l=================================================================
+# Logs & Crash Reports
+# ===================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ===================================================================
+# Environment & Secrets
+# (CRITICAL: Never commit these)
+# ===================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===================================================================
+# OS, Editor & Design Files
+# ===================================================================
+# OS
+.DS_Store
+Thumbs.db
+
+# Backups
+**/*.backup.*
+**/*.back.*
+
+# Editors
+.vscode-test/
+.sublime*
+.grunt
+.lock-wscript
+.tern-port
+
+# Design
+psd/
+thumb/
+sketch/
+
+# ===================================================================
+# Test Coverage
+# ===================================================================
+coverage/
+*.lcov
+.nyc_output
+lib-cov
+
+# ... (and any other specific items you had)
