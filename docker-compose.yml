@@ -13,8 +13,10 @@ services:
     build: ./frontend # <-- Use the Dockerfile in ./frontend
     working_dir: /usr/src/app
     volumes:
+      - /usr/src/app/node_modules
       - ./frontend:/usr/src/app
-      - /usr/src/app/node_modules # <-- This is the one, correct volumes block
+      # - /usr/src/app/node_modules:/usr/src/app/node_modules # <-- This is the one, correct volumes block /usr/src/app/node_modules
+      # - /usr/src/app/node_modules
     ports:
       - "3000:3000"
     environment:
