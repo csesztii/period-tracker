@@ -46,3 +46,10 @@
   font-weight: bold;
   color: #b00020;
 }
+
+.periodDay {
+  background-color: rgba(255, 60, 60, 0.4);
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
